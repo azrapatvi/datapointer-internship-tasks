@@ -1,7 +1,7 @@
 import requests #type:ignore
 
 city_name = input("enter city:")
-API_key = "2f759d8bc16095fba83bc8de27aac276"
+API_key = "YOUR_API_KEY"
 
 url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_key}&units=metric"
 
@@ -15,3 +15,4 @@ if response.status_code == 200:
     print("humidity is:",data['main']['humidity'])
 else:
     print("Something went wrong.")
+
